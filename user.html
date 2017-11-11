@@ -12,6 +12,9 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,6 +35,7 @@
     $(".close").on('click', function(event) {
       $("#first").hide()
     })
+    $('.dropdown-toggle').dropdown();
   })
 </script>
 
@@ -50,7 +54,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">History</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Info
         </a>
@@ -61,6 +65,18 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Legal info</a>
           </div>
+
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Notifications
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Not 1</a>
+            <a class="dropdown-item" href="#">not 2</a>
+            <a class="dropdown-item" href="#">not 3</a>
+          </div>
+
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -72,7 +88,7 @@
 
 
   <div class="background0">
-    <div class="container">
+    <div class="container mt-4">
       <div class="alert alert-success" role="alert" id="first">
         <button type="button" class="close" aria-label="Close" id="close">
           <span aria-hidden="true">&times;</span>
@@ -82,8 +98,39 @@
         <hr>
         <p class="mb-0">Your pending requests will be shown below.</p>
       </div>
+      <div class="jumbotron">
+        <h1 class="display-3">Apply for a new job!</h1>
+        <p class="lead">Quickly apply for all the jobs that are a fit for you with a single click.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Apply today!</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Job application 1</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
 
+          <h4>Job application 3</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Job application 5</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Job application 2</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Job application 4</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Job application 6</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+      <div class="left_thing">
+
+      </div>
     </div>
   </div>
 
