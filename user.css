@@ -1,4 +1,26 @@
+@media only screen and (max-width: 1026px) {
+    .left_thing {
+        display: none;
+    }
+}
+
 .left_thing{
   position: absolute;
-   
+  top: 20vh;
+  left: 5vh;
+  padding: 10px;
+}
+
+footer{
+
+  margin-top: 15 vh;
+}
+
+
+.footsy{
+  text-align: center;
+  padding: 2vh;
+  width: 100%;
+  position: bottom;
+
 }
