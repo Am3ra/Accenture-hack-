@@ -25,9 +25,6 @@
 
 </head>
 
-</script>
-
-
 <body id="page-top">
 
 	<!-- Navigation -->
@@ -53,26 +50,30 @@
 						<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
 					</li>
 				</ul>
-				<a class="btn btn-outline-warning my-2 my-sm-0" href="signup.html">Signup!</a>
+				<a class="btn btn-outline-warning my-2 my-sm-0" href="login.html">Login!</a>
 			</div>
 		</div>
 	</nav>
 
-	<header class="masthead"></header>
+	<header class="masthead">
+
+	</header>
 
 	<div class="signin">
 		<div class="p-2 mb-5 bg-light text-black rounded" style="padding: 30px;">
 			<form class="form-signin" style="padding: 30px;" action='../cgi-bin/WebApp/python.cgi' method='post'>
-				<h2 class="form-signin-heading"><i>Please log-in.</i></h2>
+				<h2 class="form-signin-heading">Join Joppu!</h2>
 				<input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
 				<input type="password" class="form-control" name="password" placeholder="Password" required="" />
 				<label class="checkbox">
-        <input type="checkbox" value="remember-me"  name="rememberMe"> Remember me
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
       </label>
-				<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Sign-up!</button>
 			</form>
 		</div>
+
 	</div>
+
 </body>
 
 

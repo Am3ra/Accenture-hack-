@@ -22,7 +22,19 @@
   <link rel="icon" href="favicon.png">
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
-
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC2v-BB4_b2emudooY7Kh6IgJojS7vFZRg",
+      authDomain: "joppu-7d57c.firebaseapp.com",
+      databaseURL: "https://joppu-7d57c.firebaseio.com",
+      projectId: "joppu-7d57c",
+      storageBucket: "joppu-7d57c.appspot.com",
+      messagingSenderId: "1079702088552"
+    };
+    firebase.initializeApp(config);
+  </script>
 </head>
 
 <body id="page-top">
@@ -39,6 +51,9 @@
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="rankings.html">Rankings</a>
           </li>
 
           <li class="nav-item">
